@@ -1,0 +1,143 @@
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 180px; /* Daraltıldı */
+    position: relative;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .score-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .score-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 0px;
+    
+  }
+  
+  .score-chart {
+    position: relative;
+    width: 20px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .score-background {
+    width: 10px;
+    height: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    position: absolute;
+  }
+  
+  .score-fill {
+    width: 10px;
+    background: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .score-bubble {
+    position: absolute;
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); /* Aşağı kaydırıldı */
+  }
+  
+  .previous-score {
+    position: absolute;
+    font-size: 10px;
+    color: #e63946;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .previous-line {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #e63946;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .score-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    font-size: 12px;
+    color: gray;
+    position: absolute;
+    right: -25px; /* Sağa yaslandı */
+    text-align: left;
+  }
+  
+  .label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .label-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    text-align: left;
+  }
+  
+  .label-description {
+    visibility: hidden;
+    width: 100px;
+    font-size: 10px;
+    color: gray;
+    text-transform: lowercase;
+  }
+  
+  .label .line {
+    flex-grow: 1;
+    height: 1px;
+    background: gray;
+    margin-left: 5px;
+  }
+  
+  .score-line {
+    width: 111%;
+    height: 3px;
+    background: #e0e0e0;
+    margin-top: 0px; /* Boşluk ekledim */
+    margin-bottom: 20px; /* Boşluk ekledim */
+  }
